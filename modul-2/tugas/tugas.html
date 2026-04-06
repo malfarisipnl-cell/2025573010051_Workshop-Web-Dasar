@@ -1,0 +1,117 @@
+<!--membuat header dengan navigasi, main dengan beberapa section, dan footer-->
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#About">About</a> | <a href="#Skills">Skills</a> |
+        <a href="#Pengalaman">Pengalaman</a> | <a href="#Kontak">Kontak</a> |
+      </nav>
+    </header>
+
+    <main>
+      <!-- section 1 -->
+      <p id="About"></p>
+      <section>
+        <h1>About Me</h1>
+        <img
+          src="WhatsApp Image 2026-04-06 at 14.16.27.jpeg"
+          height="200"
+          width="150"
+          style="border-radius: 15%"
+          alt="Photo Profile Alfarisi"
+        />
+        <p>
+          Halo, nama saya Muhammad Alfarisi. Saya seorang mahasiswa jurusan
+          Teknik Informatika <br />
+          di Universitas Politeknik Negeri Lhokseumawe. Saya baru belajar dasar
+          tentang web devlopment,<br />
+          dan saya mencoba untuk membuat website untuk menampilkanfortofolio
+          saya. Dan saya memulai nya<br />
+          dengan membuat file HTML.
+        </p>
+      </section>
+
+      <!-- section 2 -->
+      <section id="Skills">
+        <h3>My Skills</h3>
+        <p>Teknik skills seperti:</p>
+        <ul>
+          <li>menggambar</li>
+        </ul>
+        <p>Non teknik skills seperti:</p>
+        <ul>
+          <li>komunikasi</li>
+          <li>kerjasama tim</li>
+        </ul>
+      </section>
+
+      <!-- section 3 -->
+
+      <section id="Pengalaman">
+        <h3>Pengalaman</h3>
+        <ol>
+          <li>Kerja di toko kelontong milik pribadi</li>
+          <li>Kerja di tempat car wash</li>
+        </ol>
+      </section>
+
+      <!-- section 4 -->
+
+      <section id="Kontak">
+        <h3>Kontak</h3>
+        <form>
+          <!-- nama pengirim -->
+          <label for="nama ">Nama pengirim:</label><br />
+          <input type="text" id="nama" name="nama" required />
+          <br />
+          <br />
+
+          <!-- email pengirim -->
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <br />
+
+          <!-- subjek dropdown -->
+          <label for="subjek">Subjek:</label><br />
+          <select id="subjek" name="subjek" required>
+            <option value="">Pilih subjek</option>
+            <option value="pertanyaan">Pertanyaan</option>
+            <option value="saran">Saran</option>
+            <option value="keluhan">Keluhan</option>
+          </select>
+          <br />
+          <br />
+          <label for="pesan">Pesan:</label>
+          <br />
+          <br />
+
+          <!-- pesan textarea -->
+          <textarea id="pesan" name="pesan" rows="4" required></textarea><br />
+
+          <!-- tombol Kirim -->
+          <button type="submit">Kirim</button>
+        </form>
+
+        <footer>
+          <p>
+            &copy; 2026 Muhammad Alfarisi.<a
+              href="https://github.com/malfarisipnl-cell/"
+              target="_blank"
+            >
+              <br />
+              GitHub</a
+            >
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
