@@ -7,11 +7,11 @@
 
 /* ================= VARIABLES ================= */
 :root {
-  --primary: #F9B2D7;
-  --secondary: #CFECF3;
-  --dark: #af4b7f;
-  --light: #F6FFDC;
-  --text: #af4b7f;
+  --primary: #A27B5C;
+  --secondary: #DCD7C9;
+  --dark: #DCA06D;
+  --light: #DCD7C9;
+  --text: #e8c2a0;
   --font-main: "Segoe UI", sans-serif;
 }
 
@@ -19,7 +19,7 @@
 body {
   font-family: var(--font-main);
   background: var(--light);
-  color: var(--text);
+  color: var(--primary);
 }
 
 /* ================= HEADER ================= */
