@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300 font-semibold;
+  }
+
+  .menu-card {
+    @apply bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border border-gray-100 dark:border-gray-700;
+  }
+
+  .menu-card img {
+    @apply rounded-lg w-full h-75 object-cover;
+  }
+
+  .menu-card:hover{
+    @apply shadow-md shadow-orange-500 -translate-y-1 border-2 border-solid border-orange-600;
+  }
+
+  .package-card {
+    @apply bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg hover:shadow-2xl transition duration-500 border border-gray-100 dark:border-gray-700;
+  }
+
+  .package-card:hover{
+    @apply shadow-md shadow-orange-500 -translate-y-1 border-2 border-solid border-orange-600;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white;
+  }
+}

@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>La Trattoria | Authentic Italian</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-slate-1000 dark:bg-gray-900 transition-colors duration-300">
+    <nav
+      class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b dark:border-gray-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between"
+      >
+        <h1 class="text-2xl font-serif font-bold text-red-600">La Trattoria</h1>
+
+        <div class="flex items-center gap-4">
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 animate-pulse"
+          >
+            <span id="theme-icon">🌙</span>
+          </button>
+
+          <div class="md:hidden p-2">
+            <div class="w-6 h-0.5 bg-gray-600 mb-1"></div>
+            <div class="w-6 h-0.5 bg-gray-600 mb-1"></div>
+            <div class="w-6 h-0.5 bg-gray-600"></div>
+          </div>
+
+          <ul class="hidden md:flex gap-6 font-medium dark:text-gray-200">
+            <li><a href="#" class="hover:text-red-600 transition">Home</a></li>
+            <li>
+              <a href="#menu" class="hover:text-red-600 transition">Menu</a>
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-red-600 transition"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-red-600 transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="relative h-[80vh] flex items-center justify-center text-center px-4 overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80')] bg-cover bg-center"
+      >
+        <div class="absolute inset-0 bg-black/50"></div>
+      </div>
+      <div class="relative text-white animate-bounce-slow">
+        <h2 class="text-5xl md:text-7xl font-serif mb-4">Taste of Italy</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Handmade pasta & wood-fired pizza since 1984
+        </p>
+        <button class="btn-primary animate-pulse">Book a Table</button>
+      </div>
+    </header>
+
+    <section id="menu" class="py-20 max-w-7xl mx-auto px-4">
+      <h2 class="section-title">Our Signature Dishes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Margherita Pizza</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Fresh basil, mozzarella, and tomato sauce.
+          </p>
+        </div>
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RmV0dHVjY2luZSUyMEFsZnJlZG98ZW58MHx8MHx8fDA%3D"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Fettuccine Alfredo</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Creamy parmesan sauce with garlic butter.
+          </p>
+        </div>
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1551183053-bf91a1d81141"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Lasagna Bolognese</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Layers of meat sauce and bechamel.
+          </p>
+        </div>
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1546549032-9571cd6b27df"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Spaghetti Carbonara</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Pecorino romano, guanciale, and eggs.
+          </p>
+        </div>
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://images.unsplash.com/photo-1533777324565-a040eb52facd"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Tiramisu Dolce</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Coffee-soaked ladyfingers with mascarpone.
+          </p>
+        </div>
+        <div class="menu-card group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1694850980302-f568e6de0f6d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Umlzb3R0byUyMEFpJTIwRnVuZ2hpfGVufDB8fDB8fHww"
+              class="group-hover:scale-110 transition duration-500"
+            />
+          </div>
+          <h3 class="text-xl font-bold dark:text-white">Risotto Ai Funghi</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Arborio rice with wild forest mushrooms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="section-title">Special Packages</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div
+            class="package-card w-full md:w-80 p-8 bg-white dark:bg-gray-900 rounded-2xl text-center border-t-4 border-red-600"
+          >
+            <h3 class="text-xl font-bold dark:text-white">Family Date</h3>
+            <p class="text-4xl font-bold my-4 dark:text-white">$75</p>
+            <ul class="text-gray-600 dark:text-gray-400 mb-8 space-y-2">
+              <li>4 Main Courses</li>
+              <li>2 Shared Dessert</li>
+              <li>4 Glasses of Orange Juice</li>
+            </ul>
+            <button class="btn-primary w-full">Choose Package</button>
+          </div>
+          <div
+            class="package-card w-full md:w-80 p-8 bg-white dark:bg-gray-900 rounded-2xl text-center border-t-4 border-red-600 "
+          >
+            <h3 class="text-xl font-bold dark:text-white">Couple Date</h3>
+            <p class="text-4xl font-bold my-4 dark:text-white">$45</p>
+            <ul class="text-gray-600 dark:text-gray-400 mb-8 space-y-2">
+              <li>2 Main Courses</li>
+              <li>1 Shared Dessert</li>
+              <li>2 Glasses of Wine</li>
+            </ul>
+            <button class="btn-primary w-full">Choose Package</button>
+          </div>
+          <div
+            class="package-card w-full md:w-80 p-8 bg-white dark:bg-gray-900 rounded-2xl text-center border-t-4 border-red-600"
+          >
+            <h3 class="text-xl font-bold dark:text-white">Me Time</h3>
+            <p class="text-4xl font-bold my-4 dark:text-white">$25</p>
+            <ul class="text-gray-600 dark:text-gray-400 mb-8 space-y-2">
+              <li>2 Main Courses</li>
+              <li>1 Dessert</li>
+              <li>3 Glasses of Coffe</li>
+            </ul>
+            <button class="btn-primary w-full">Choose Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-3xl mx-auto px-4">
+      <h2 class="section-title">Reserve a Table</h2>
+      <form class="space-y-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          class="w-full p-3 rounded-lg border dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:ring-2 focus:ring-red-600 outline-none"
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="w-full p-3 rounded-lg border dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:ring-2 focus:ring-red-600 outline-none"
+        />
+        <textarea
+          placeholder="Special Requests"
+          rows="4"
+          class="w-full p-3 rounded-lg border dark:bg-gray-800 dark:border-gray-700 dark:text-white focus:ring-2 focus:ring-red-600 outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="btn-primary w-full shadow-lg hover:scale-105"
+        >
+          Send Reservation
+        </button>
+      </form>
+    </section>
+
+    <footer
+      class="py-10 bg-white dark:bg-gray-900 border-t dark:border-gray-800 text-center"
+    >
+      <p class="text-gray-500 dark:text-gray-400">
+        &copy; 2024 La Trattoria. Crafted with Passion.
+      </p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
