@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  /* Button Components */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all duration-200 transform hover:-translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all duration-200 transform hover:-translate-y-0.5 bg-blue-600 text-white shadow-lg shadow-blue-600/30 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold transition-all duration-200 transform hover:-translate-y-0.5 bg-white text-blue-600 border-2 border-blue-200 hover:border-blue-400 dark:bg-slate-900 dark:text-blue-400 dark:border-blue-800 dark:hover:border-blue-600;
+  }
+
+  /* Card Components */
+  .card {
+    @apply relative bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl dark:hover:shadow-lg dark:hover:shadow-blue-900/20;
+  }
+
+  .card::before {
+    content: '';
+    @apply absolute top-6 right-6 w-11 h-11 bg-gradient-to-br from-blue-400/20 to-orange-400/20 rounded-lg dark:from-blue-500/10 dark:to-orange-500/10;
+  }
+
+  .card-feature {
+    @apply bg-white dark:bg-slate-900 border border-blue-100 dark:border-slate-800 rounded-3xl p-8 shadow-lg dark:shadow-lg dark:shadow-blue-900/20;
+  }
+  .card-feature:hover{
+    @apply border-solid border-2 border-sky-500 dark:border-solid dark:border-sky-400 -translate-y-1 shadow-xl shadow-blue-300 dark:shadow-lg dark:shadow-blue-900/20;
+  }
+
+  /* Section Components */
+  .section-heading {
+    @apply text-center mb-8;
+  }
+
+  .section-label {
+    @apply block uppercase tracking-widest text-blue-600 dark:text-blue-400 text-sm font-bold mb-2;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-slate-900 dark:text-white;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 text-sm font-bold px-4 py-2 rounded-full;
+  }
+
+  .badge::before {
+    content: '';
+    @apply w-2 h-2 bg-orange-500 rounded-full;
+  }
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  from {
+    box-shadow: 0 0 0 rgba(37, 85, 245, 0.15);
+  }
+  to {
+    box-shadow: 0 0 24px rgba(37, 85, 245, 0.28);
+  }
+}
+
+@layer utilities {
+  .animate-pulse-glow {
+    animation: pulse-glow 2.5s ease-in-out infinite alternate;
+  }
+}
