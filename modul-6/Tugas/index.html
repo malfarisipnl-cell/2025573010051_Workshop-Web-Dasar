@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toko Komputer Online - Keranjang Belanja</title>
+  <link rel="stylesheet" href="styel.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="heading">
+      <div>
+        <h1>🖥️ Toko Komputer Online</h1>
+        <p>Belanja perangkat komputer berkualitas tinggi dengan harga terjangkau. Tambahkan produk ke keranjang, atur jumlah pembelian, dan checkout dengan mudah.</p>
+      </div>
+      <div class="badge" id="iconBadge">0 item</div>
+    </section>
+
+    <div class="layout">
+      <section>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <aside class="cart-panel" aria-label="Ringkasan keranjang belanja">
+        <div class="cart-header">
+          <div>
+            <h2>Keranjang Anda</h2>
+            <p id="cartStatus">Belum ada produk dalam keranjang.</p>
+          </div>
+          <div class="badge" id="cartCount">0</div>
+        </div>
+
+        <ul class="cart-list" id="cartList"></ul>
+
+        <div class="summary">
+          <div class="summary-row">
+            <span>Total item</span>
+            <span id="summaryItems">0</span>
+          </div>
+          <div class="summary-row total">
+            <span>Harga total</span>
+            <span id="summaryTotal">Rp 0</span>
+          </div>
+        </div>
+
+        <button class="checkout" id="checkoutButton" type="button">Checkout</button>
+      </aside>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
